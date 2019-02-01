@@ -3,9 +3,9 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
 body {
   font-family: "Montserrat", sans-serif;
-  background: linear-gradient(270deg, #ffead1, #ffb6bd, #e0b5ff);
+  background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
   background-size: 150% 150%;
-  animation: backgroundAnimation 10s ease infinite;
+  /* animation: backgroundAnimation 10s ease infinite; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -49,8 +49,8 @@ body {
   animation-fill-mode: both;
   position: relative;
   border-radius: 10px;
-  box-shadow: 0 25px 45px -20px rgba(255, 0, 47, 0.55),
-    inset 0 0px 120px rgba(255, 0, 47, 0.75);
+  /* box-shadow: 0 25px 45px -20px rgba(255, 0, 47, 0.55),
+    inset 0 0px 120px rgba(255, 0, 47, 0.75); */
   width: 45%;
   flex: none;
   background-image: url("https://avatars2.githubusercontent.com/u/36588838?s=460&v=4");
@@ -58,7 +58,7 @@ body {
   background-position: center;
 }
 
-.profile-image::before {
+/* .profile-image::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -67,7 +67,7 @@ body {
   background-color: #ff2256;
   opacity: 0.8;
   mix-blend-mode: screen;
-}
+} */
 
 .camera {
   color: #FFFF;
@@ -95,12 +95,16 @@ h1.first-name {
   animation: titleEffect 1s cubic-bezier(0,0.2,0.4,1);
   top: -115px;
   left: -85px;
+  color: white;
+  background-color: #f63d47;
 }
 
 h1.second-name {
   animation: titleEffect 1s cubic-bezier(0,0,0.3,1);
   top: -50px;
   left: -45px;
+  color: white;
+  background-color: #f63d47;
 }
 
 .profile-info h2 {
@@ -118,6 +122,11 @@ h1.second-name {
 
 .profile-info p {
   line-height: 1.5rem;
+}
+
+.profile-info a{
+  color: #f63d47;
+  font-weight: 600;
 }
 
 .social-media-icons {
